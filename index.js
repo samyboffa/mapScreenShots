@@ -31,7 +31,7 @@ const takeScreenShot = async (page, city) => {
   await page.keyboard.press('Minus');
   await page.waitForTimeout(5000);
   await page.screenshot({
-    path: `./${city}.png`,
+    path: `./output/${city}.png`,
     clip: { width: 535, height: 711, x: 520, y: 100 },
   });
 };
